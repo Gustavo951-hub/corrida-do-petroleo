@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida do Petróleo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="adminArea">
+        <h2>Administração da Sala</h2>
+        <div id="roomCodeContainer">
+            <strong>Código da Sala:</strong> <span id="roomCode"></span>
+        </div>
+        <button id="generateCodeBtn">Gerar Código da Sala</button>
+    </div>
+
+    <div id="joinRoomArea">
+        <h2>Entrar na Sala</h2>
+        <input type="text" id="playerRoomCode" placeholder="Digite o código da sala">
+        <button onclick="tryJoin()">Entrar</button>
+    </div>
+
+    <div id="waitingRoom" style="display:none;">
+        <h2>Jogadores na Sala:</h2>
+        <div id="playerList"></div>
+    </div>
+
+    <div id="worldMap" style="display:none;">
+        <h2>Mapa da Corrida do Petróleo</h2>
+        <div id="mapContainer"></div>
+        <button id="updateMapBtn">Atualizar Mapa</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
